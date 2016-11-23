@@ -1,0 +1,16 @@
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\bin\Debug\sqlite.exe.config
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\bin\Debug\sqlite.exe
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\bin\Debug\sqlite.pdb
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\صناع حياه اسيوط.csprojResolveAssemblyReference.cache
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.add_search.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.add_support.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.add_vul.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.delete_support.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.Edite_search.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Presentation_layer.Edite_vul.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Form1.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.Properties.Resources.resources
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\صناع حياه اسيوط.csproj.GenerateResource.Cache
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.exe
+C:\Users\UsersFiles\Documents\Visual Studio 2013\Projects\sqlite\sqlite\obj\Debug\sqlite.pdb
+C:\Users\UsersFiles\documents\visual studio 2013\Projects\sqlite\sqlite\bin\Debug\System.Data.SQLite.dll

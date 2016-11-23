@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7083FFC-C044-40A5-9D41-EB66B05216C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sqlite</RootNamespace>
+    <AssemblyName>sqlite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\Downloads\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllVul.cs">
+      <DependentUpon>AllVul.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllVul.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllVul.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="database_connect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="database_connect.Designer.cs">
+      <DependentUpon>database_connect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data_access_layer.cs" />
+    <Compile Include="Presentation layer\add_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\add_search.Designer.cs">
+      <DependentUpon>add_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\add_support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\add_support.Designer.cs">
+      <DependentUpon>add_support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\add_vul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\add_vul.Designer.cs">
+      <DependentUpon>add_vul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\backup_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\backup_form.Designer.cs">
+      <DependentUpon>backup_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\delete_support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\delete_support.Designer.cs">
+      <DependentUpon>delete_support.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\Edite_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\Edite_search.Designer.cs">
+      <DependentUpon>Edite_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\Edite_vul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\Edite_vul.Designer.cs">
+      <DependentUpon>Edite_vul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\main_form.Designer.cs">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\play_pic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\play_pic.Designer.cs">
+      <DependentUpon>play_pic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation layer\support_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation layer\support_report.Designer.cs">
+      <DependentUpon>support_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Allvultaners.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Allvultaners.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\All_search.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>All_search.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\all_support.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>all_support.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\one_search.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>one_search.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="search_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_report.Designer.cs">
+      <DependentUpon>search_report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="database_connect.resx">
+      <DependentUpon>database_connect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\add_search.resx">
+      <DependentUpon>add_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\add_support.resx">
+      <DependentUpon>add_support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\add_vul.resx">
+      <DependentUpon>add_vul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\backup_form.resx">
+      <DependentUpon>backup_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\delete_support.resx">
+      <DependentUpon>delete_support.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\Edite_search.resx">
+      <DependentUpon>Edite_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\Edite_vul.resx">
+      <DependentUpon>Edite_vul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\main_form.resx">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\play_pic.resx">
+      <DependentUpon>play_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation layer\support_report.resx">
+      <DependentUpon>support_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Allvultaners.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Allvultaners.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\All_search.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>All_search.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\all_support.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>all_support.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\one_search.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>one_search.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_report.resx">
+      <DependentUpon>search_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AllVul.xsc">
+      <DependentUpon>AllVul.xsd</DependentUpon>
+    </None>
+    <None Include="AllVul.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllVul.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AllVul.xss">
+      <DependentUpon>AllVul.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1435975321_icon-136-document-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1441904014_file_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow2_up_right_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1435992311_Instagram_Social-Network-Communicate-Page-Curl-Effect-Circle-Glossy-Shadow-Shine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_button_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14429524_802635493208895_846365482_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
